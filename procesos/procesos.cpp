@@ -7,12 +7,12 @@
 using namespace std;
 
 void modulo_procesos(void) {
-    cout << "\n--- MÓDULO I: GESTIÓN DE PROCESOS ---" << endl;
+    cout << "\n--- MODULO I: GESTION DE PROCESOS ---" << endl;
     
     pid_t pid = fork();
 
     if (pid < 0) {
-        // Control de error en la creación del proceso
+        // Control de error en la creacion del proceso
         cerr << "[Error] No fue posible crear el proceso hijo mediante fork()." << endl;
         return;
     } else if (pid == 0) {
@@ -20,16 +20,16 @@ void modulo_procesos(void) {
         cout << "[Hijo] PID actual: " << getpid() << " | PPID (Padre): " << getppid() << endl;
         cout << "[Hijo] Ejecutando programa externo (/bin/ls)..." << endl;
         
-        // Ejecución usando execl
+        // Ejecucion usando execl
         execl("/bin/ls", "ls", "-l", (char *)NULL);
         
-        // Si execl retorna, significa que ocurrió un error
+        // Si execl retorna, significa que ocurrio un error
         cerr << "[Error] Fallo al ejecutar el comando con execl." << endl;
         exit(EXIT_FAILURE);
     } else {
         // Bloque del Proceso Padre
         cout << "[Padre] PID: " << getpid() << " | Proceso hijo creado con PID: " << pid << endl;
-        cout << "[Padre] Esperando la finalización del proceso hijo..." << endl;
+        cout << "[Padre] Esperando la finalizacion del proceso hijo..." << endl;
 
         int estado;
         pid_t resultado_wait = waitpid(pid, &estado, 0);
@@ -37,12 +37,12 @@ void modulo_procesos(void) {
         if (resultado_wait < 0) {
             cerr << "[Error] Fallo al esperar al proceso hijo con waitpid." << endl;
         } else {
-            // Verificación del estado de finalización
+            // Verificacion del estado de finalizacion
             if (WIFEXITED(estado)) {
                 cout << "[Padre] El proceso hijo (PID: " << resultado_wait 
-                     << ") terminó normalmente con código de salida: " << WEXITSTATUS(estado) << endl;
+                     << ") termino normalmente con codigo de salida: " << WEXITSTATUS(estado) << endl;
             } else {
-                cout << "[Padre] El proceso hijo finalizó de forma anormal." << endl;
+                cout << "[Padre] El proceso hijo finalizo de forma anormal." << endl;
             }
         }
     }
