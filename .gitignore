@@ -1,0 +1,13 @@
+# Ejecutables
+miniso
+*.exe
+
+# Archivos objeto
+*.
+
+# Archivos termporales
+*.tmp
+
+# Configuracion de editores
+.vscode/
+.idea/
