@@ -1,5 +1,5 @@
-#ifndef PROCESS_H
-#define PROCESS_H
+#ifndef PROCESOS_H
+#define PROCESOS_H
 
 void modulo_procesos(void);
 
