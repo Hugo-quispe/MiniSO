@@ -1,4 +1,7 @@
 #include <iostream>
+#include "../procesos/procesos.h"
+
+
 
 using namespace std;
 int main(){
@@ -16,7 +19,7 @@ int main(){
         cin >> opcion;
         switch(opcion){
             case 1:
-                cout << "\nModulo de procesos en desarrollo.\n";
+                modulo_procesos();
                 break;
             case 2: 
                 cout << "\nModulo de hilos en desarrollo.\n";
