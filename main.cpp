@@ -30,7 +30,7 @@ int main(){
                 ejecutarParticionamiento();
                 break;
             case 4: 
-                cout << "\nModulo de memoeia en desarrollo.\n";
+                ejecutarPaginacion();
                 break;
             case 0:
                 cout << "Cerrando MiniSO...\n";
