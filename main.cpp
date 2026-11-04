@@ -1,7 +1,7 @@
 #include <iostream>
-#include "../procesos/procesos.h"
-
-
+#include "procesos/procesos.h"
+#include "hilos/hilos.h"
+#include "memoria/memoria.h"
 
 using namespace std;
 int main(){
@@ -13,10 +13,12 @@ int main(){
         cout << "======================================\n";
         cout << "1. Gestion de procesos\n";
         cout << "2. Gestion de hilos y concurrencia\n";
-        cout << "3. Gestion de memoria\n";
+        cout << "3. Gestion de memoria: Particionamiento (First-Fit)\n";
+        cout << "4. Gestion de memoria: Paginacion (Marcos y Tablas)\n";
         cout << "0. Salir\n";
         cout << "Seleccione una opcion: ";
         cin >> opcion;
+        
         switch(opcion){
             case 1:
                 modulo_procesos();
@@ -25,6 +27,9 @@ int main(){
                 cout << "\nModulo de hilos en desarrollo.\n";
                 break;
             case 3: 
+                ejecutarParticionamiento();
+                break;
+            case 4: 
                 cout << "\nModulo de memoeia en desarrollo.\n";
                 break;
             case 0:
