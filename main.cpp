@@ -1,7 +1,7 @@
 #include <iostream>
-#include "../procesos/procesos.h"
-
-
+#include "procesos/procesos.h"
+#include "hilos/hilos.h"
+#include "memoria/memoria.h"
 
 using namespace std;
 int main(){
