@@ -24,7 +24,7 @@ int main(){
                 modulo_procesos();
                 break;
             case 2: 
-                cout << "\nModulo de hilos en desarrollo.\n";
+                menuHilos();
                 break;
             case 3: 
                 ejecutarParticionamiento();
