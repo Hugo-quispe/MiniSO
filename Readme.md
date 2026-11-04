@@ -10,7 +10,10 @@
 
 Proyecto grupal de la asignatura **Sistemas Operativos**.
 
-**Integrantes:** NINA ESTUCO, William Andre 	2024-119006 · PINO ROJAS, Raul Farid Banchello	2024-119009 · ORDOÑO QUISPE, Hugo Antonio	2024-119049 ·
+**Integrantes:** 
+NINA ESTUCO, William Andre 	2024-119006  
+PINO ROJAS, Raul Farid Banchello  2024-119009 
+ORDOÑO QUISPE, Hugo Antonio	2024-119049
 
 ---
 
