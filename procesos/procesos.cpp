@@ -11,11 +11,11 @@ void modulo_procesos(void) {
     // Crear el PRIMER proceso hijo
     pid_t pid1 = fork();
 
-    if (pid < 0) {
+    if (pid1 < 0) {
         // Control de error en la creacion del proceso
         cerr << "[Error] No fue posible crear el primer proceso hijo." << endl;
         return;
-    } else if (pid == 0) {
+    } else if (pid1 == 0) {
         // Bloque del Primer hijo
         cout << "[Hijo 1] PID actual: " << getpid() << " | PPID (Padre): " << getppid() << endl;
         cout << "[Hijo 1] Ejecutando programa externo (/bin/ls)..." << endl;
