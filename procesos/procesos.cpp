@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include <cstdlib>
-#include "../procesos/procesos.h"
+#include "procesos.h"
 
 using namespace std;
 
